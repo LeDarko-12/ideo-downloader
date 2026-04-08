@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloader Pro</title>
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎬 Downloader Pro</h1>
+
+    <div class="input-box">
+      <input type="text" id="urlInput" placeholder="Pega aquí el enlace del video...">
+      <button onclick="convertVideo()">Convertir</button>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div id="result" class="hidden">
+      <img id="thumbnail" src="">
+      <h2 id="title"></h2>
+
+      <div class="downloads">
+        <h3>Descargar Video</h3>
+        <div id="videoOptions"></div>
+
+        <h3>Descargar Audio</h3>
+        <div id="audioOptions"></div>
+      </div>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
